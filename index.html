@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <script src="https://kit.fontawesome.com/44bca1acc7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" type="image/x-png" href="penjas.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>PENJASELESE</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+            <div class="header-box-left header-box">
+                <h3 class="header" onclick="refreshPage()">Portfolio</h3>
+            </div>
+            <div class="header-box-right header-box">
+                <div id="menu-icon-box">
+                    <i class="fas fa-bars" id="menu-icon" onclick="mobileNavbar(this)"></i>
+                </div>
+                <div class="links-box">
+                    <a href="#about" class="header-links">About</a>
+                    <a href="#skills" class="header-links">Skills</a>
+                    <a href="#projects" class="header-links most-right-link">Projects</a>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown-container" id="dropdown-container">
+            <a href="#about" class="dropdown-links" onclick="linkClick()">About</a>
+            <a href="#skills" class="dropdown-links" onclick="linkClick()">Skills</a>
+            <a href="#projects" class="dropdown-links most-bottom-link" onclick="linkClick()">Projects</a>
+        </div>
+        <div class="banner-container" id="banner-container">
+            <div class="profile">
+                <img src="penjas.jpg" alt="Penjaselese" class="profile-img">
+                <span id="typed"></span>
+            </div>
+        </div>
+        <div class="quote-container">
+            <div class="quote-box">
+                <p class="quote" id="quote">"LULUS NI BOST"</p>
+            </div>
+        </div>
+        <div class="content-container about-box" data-aos="fade-up" id="about">
+            <h1 class="content-desc">About</h1>
+            <hr class="content-line">
+            <div class="inner-content-box" data-aos="fade-up">
+                <img src="fotbar2.jpg" class="side-img" alt="Naadir Al Atilla">
+                <p class="content-text about-text">
+                    Halo, Group ini pertama kali di buat pada 6 September 2021 dan terus berlanjut sampai sekarang.
+                </p>
+            </div>
+        </div>
+        <div class="content-container skills-box" id="skills" data-aos="fade-up">
+            <h1 class="content-desc">Members</h1>
+            <hr class="content-line">
+            <div class="inner-content-box inner-skills-box" data-aos="fade-up">
+                <div class="category-box language-box">
+                    <h2 class="category-desc">Description</h2>
+                    <div class="skills" id="skill1">
+                        <img src="izza.jpg" width="120"></img>
+                        <h3 class="skill-desc skill-texts">Izza</h3>
+                        <p class="skill-exp skill-texts">Terpro</p>
+                    </div>
+
+                    <br class="skill-divide-4">
+
+                    <div class="skills" id="skill2">
+                        <img src="rasya.jpg" width="100" height="100"></img>
+                        <h3 class="skill-desc skill-texts">Rasya</h3>
+                        <p class="skill-exp skill-texts">Terkenal</p>
+                    </div>
+                    <br id="skill-divide-2">
+                    <div class="skills" id="skill3">
+                        <img src="fathur.jpg" width="100" height="100"></img>
+                        <h3 class="skill-desc skill-texts">Fathur</h3>
+                        <p class="skill-exp skill-texts">Sok A6</p>
+                    </div>
+                    <br class="skill-divide-4">
+                    <div class="skills" id="skill4">
+                        <img src="hafizh.jpg" width="100" height="100"></img>
+                        <h3 class="skill-desc skill-texts">Hafidzh</h3>
+                        <p class="skill-exp skill-texts">Pesantren</p>
+                    </div>
+                    <br class="skill-divide-4">
+                    <div class="skills" id="skill4">
+                        <img src="azmi.jpg" width="100" height="100"></img>
+                        <h3 class="skill-desc skill-texts">Azmi</h3>
+                        <p class="skill-exp skill-texts">Pesantren</p>
+                    </div>
+                    <br class="skill-divide-4">
+                    <div class="skills" id="skill4">
+                        <img src="rizal.jpg" width="100" height="100"></img>
+                        <h3 class="skill-desc skill-texts">Rizal</h3>
+                        <p class="skill-exp skill-texts">Si Sopan</p>
+                    </div>
+                    <br class="skill-divide-4">
+                    <div class="skills" id="skill4">
+                        <img src="ave.jpg" width="100" height="100"></img>
+                        <h3 class="skill-desc skill-texts">Ave</h3>
+                        <p class="skill-exp skill-texts">Pesantren</p>
+                    </div>
+                    <br class="skill-divide-4">
+                    <div class="skills" id="skill4">
+                        <img src="syabiq.jpg" width="120"></img>
+                        <h3 class="skill-desc skill-texts">Syabieq</h3>
+                        <p class="skill-exp skill-texts">Gilak</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-box">
+                <i class="fab fa-instagram footer-icon" id="instagram" onclick="instagramRedir()"></i>
+            </div>
+            <div class="footer-box" onclick="tiktokRedir()">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="footer-box" onclick="githubRedir()">
+                <i class="fab fa-github footer-icon"></i>
+            </div>
+            <div class="footer-box" onclick="discordRedir()">
+                <i class="fab fa-discord footer-icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
